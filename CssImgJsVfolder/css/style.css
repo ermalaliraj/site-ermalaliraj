@@ -27,11 +27,65 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #37517e;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #37517e;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
   overflow: hidden;
+}
+
+section #Tech {
+  padding: 60px 0;
+}
+
+section #about {
+  padding: 60px 0;
 }
 
 .section-header {
@@ -49,7 +103,7 @@ section {
 .section-header p {
   /* margin: 10px 0 0 0; */
   padding: 0;
-  font-size: 38px;
+  font-size: 33px;
   line-height: 42px;
   font-weight: 700;
   color: #012970;
@@ -401,8 +455,9 @@ section {
   /* color: #444444; */
   color: #526695;
   margin: 15px 0 0 0;
-  font-size: 32px;
+  font-size: 25px;
   margin-bottom: 13px;
+  font-weight: 600;
 }
 .hero .btn-get-started {
   margin-top: 30px;
@@ -581,7 +636,7 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.services .service-box {
+/* .services .service-box {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   height: 100%;
   padding: 60px 30px;
@@ -701,7 +756,7 @@ section {
 }
 .services .service-box:hover .icon {
   background: #fff;
-}
+} */
 
 /*--------------------------------------------------------------
 # F.A.Q
@@ -728,6 +783,7 @@ section {
 .faq .accordion-body {
   padding: 0 0 25px 0;
   border: 0;
+  padding-left: 50px;
 }
 
 /*--------------------------------------------------------------
@@ -1080,18 +1136,21 @@ section {
   background-color: #18d26e;
 }
 .HeadingFullStackDeveloper {
-  font-family: "ZCOOL XiaoWei", serif;
+  /* font-family: "ZCOOL XiaoWei", serif; */
+  font-family: "Nunito", sans-serif;
 }
 .aboutFullStack {
-  font-size: 18px;
+  font-size: 16px;
   color: cadetblue;
-  font-family: emojy;
+  font-family: "Open Sans", sans-serif;
 }
 .WhoAmI {
   font-family: "ZCOOL XiaoWei", serif;
+  font-family: "Nunito", sans-serif;
 }
 .zcoolfont {
   font-family: "ZCOOL XiaoWei", serif;
+  font-family: "Nunito", sans-serif;
 }
 .firstimage img {
   border-radius: 5px;
@@ -1105,11 +1164,13 @@ section {
   border-radius: 5px;
 }
 .ServicePara {
-  font-family: "ZCOOL XiaoWei", serif;
+  /* font-family: "ZCOOL XiaoWei", serif; */
+  font-family: "Open Sans", sans-serif;
 }
 .techPara {
   font-family: "ZCOOL XiaoWei", serif;
-  margin-bottom: -108px;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 21px;
 }
 .countSectionHeading {
   padding-left: 110px;
@@ -1118,9 +1179,11 @@ section {
   font-size: 24px;
   font-weight: 700;
   color: #012970;
+  font-family: "Nunito", sans-serif;
 }
 .secondHeadingOfabout {
   font-family: "ZCOOL XiaoWei", serif;
+  font-family: "Nunito", sans-serif;
 }
 .a {
   text-align: center;
@@ -1228,4 +1291,231 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+}
+.services .icon-box .icon {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+  position: relative;
+}
+.services .icon-box .icon i {
+  font-size: 36px;
+  transition: 0.5s;
+  position: relative;
+}
+.services .icon-box .icon svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.services .icon-box .icon svg path {
+  transition: 0.5s;
+  fill: #f5f5f5;
+}
+.services .icon-box h4 {
+  font-weight: 600;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+.services .icon-box h4 a {
+  color: #2c4964;
+  transition: ease-in-out 0.3s;
+}
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+  text-align: justify;
+}
+/* .services .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+} */
+.services .iconbox-blue i {
+  color: #47aeff;
+}
+.services .iconbox-blue:hover .icon i {
+  color: #fff;
+}
+.services .iconbox-blue:hover .icon path {
+  fill: #47aeff;
+}
+.services .iconbox-orange i {
+  color: #ffa76e;
+}
+.services .iconbox-orange:hover .icon i {
+  color: #fff;
+}
+.services .iconbox-orange:hover .icon path {
+  fill: #ffa76e;
+}
+.services .iconbox-pink i {
+  color: #e80368;
+}
+.services .iconbox-pink:hover .icon i {
+  color: #fff;
+}
+.services .iconbox-pink:hover .icon path {
+  fill: #e80368;
+}
+.services .iconbox-yellow i {
+  color: #ffbb2c;
+}
+.services .iconbox-yellow:hover .icon i {
+  color: #fff;
+}
+.services .iconbox-yellow:hover .icon path {
+  fill: #ffbb2c;
+}
+.services .iconbox-red i {
+  color: #ff5828;
+}
+.services .iconbox-red:hover .icon i {
+  color: #fff;
+}
+.services .iconbox-red:hover .icon path {
+  fill: #ff5828;
+}
+.services .iconbox-teal i {
+  color: #11dbcf;
+}
+.services .iconbox-teal:hover .icon i {
+  color: #fff;
+}
+.services .iconbox-teal:hover .icon path {
+  fill: #11dbcf;
+}
+.servicesectionimagetag img {
+  border-radius: 50%;
+  object-fit: cover;
+  /* object-position: -30px 2px; */
+}
+.ecommerseimg img {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: -30px 2px;
+}
+.eachserviceclass {
+  box-shadow: 0px 0px 2px -1px black;
+  border-radius: 20px;
+}
+.icon-box:hover {
+  box-shadow: 0px 6px 2px -1px #484895;
+  border-radius: 20px;
+
+  /* animation: iconboxmotion 1s linear infinite; */
+  transform: translate(0px, 5px);
+}
+.techknowcontainer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 1rem;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.displaybackend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.techknowboxex {
+  box-shadow: 0px 0px 2px -1px black;
+  border-radius: 20px;
+  padding: 5px;
+  padding-top: 10px;
+}
+.techknowboxex:hover {
+  box-shadow: 0px 6px 2px -1px #484895;
+  border-radius: 20px;
+
+  /* animation: iconboxmotion 1s linear infinite; */
+  transform: translate(0px, 5px);
+  transition: all ease-in-out 0.3s;
+}
+
+.displaybackend h3 {
+  color: #2c4964;
+  font-weight: 600;
+  /* margin: 10px 0px 15px; */
+  font-size: 22px;
+  font-family: Nunito, sans-serif;
+}
+.displaybackend ul li {
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+.techTechKNowmargin {
+  margin-bottom: -35px;
+}
+.fontOfColloboration {
+  font-size: 32px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slide-track {
+  animation: scroll 20s linear infinite;
+  display: flex;
+}
+/* .slider {
+  width: 100px;
+  border: 1px solid red;
+} */
+.slider .slide {
+  padding: 20px;
+  height: 100px;
+  width: 250px;
+  /* border: 1px solid red; */
+}
+
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 1269px;
+  border-radius: 10px;
+  margin-bottom: 35px;
+}
+.slide img {
+  object-fit: cover;
+  padding: 5px;
+}
+.colloborationdib {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ball2image img {
+  width: 51px;
+  height: 38px;
+  object-fit: cover;
 }
