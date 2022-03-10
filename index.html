@@ -39,12 +39,9 @@
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto active" href="#home">Home</a></li>
-            <li><a class="nav-link scrollto" href="#about">About</a></li>
-            <li>
-              <a class="nav-link scrollto" href="#Tech">Technologies</a>
-            </li>
             <li><a class="nav-link scrollto" href="#serv">Services</a></li>
-
+            <li><a class="nav-link scrollto" href="#Tech">Technologies</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
@@ -92,127 +89,141 @@
 
     <!-- start main section -->
     <main id="main">
-      <!-- ======= About Section ======= -->
-      <section id="about" class="about">
+
+      <!-- ======= service Section ======= -->
+      <section id="serv" class="testimonials">
         <div class="container" data-aos="fade-up">
-          <div class="row gx-0">
-            <div
-              class="col-lg-6 d-flex flex-column justify-content-center"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="content">
-                <h3 class="WhoAmI">Who am i</h3>
-                <h2 class="secondHeadingOfabout">
-                  Well, let me introduce myself.
-                </h2>
-                <p class="fontOfaboutPara">
-                  I am a passionate guy who loves coding and providing efficient
-                  solutions. For years my career has been in Java and I have the
-                  certification of Associate, Professional and Expert from
-                  Oracle. For different years I have also designed and
-                  maintained databases such as Oracle and later MongoDB. In the
-                  last few years my focus has been helping startups to build
-                  their MPV using Angular, React, Python and MongoDB. I am
-                  passionate about Artificial Intelligence and that's why I
-                  decided to attend in 2021 a Postgraduate program at University of
-                  Leuven. I don't think my career will switch
-                  to AI but it really helped me to bring into Software
-                  engineering the Machine Learning technique and apply them in
-                  real world use cases.
-                </p>
-                <div class="text-center text-lg-start">
-                  <a
-                    href="#"
-                    class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center"
-                  >
-                    <span>Read More</span>
-                    <i class="bi bi-arrow-right"></i>
-                  </a>
+          <header class="section-header">
+            <p class="ServicePara">Services</p>
+          </header>
+
+          <div
+                  class="testimonials-slider swiper"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>Fast and economic solutions for your business idea.</p>
+                  <div class="profile mt-auto">
+                    <img
+                            src="app/img/testimonials/mvp.jfif"
+                            class="testimonial-img"
+                            alt=""
+                    />
+                    <h3>MVP creation</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide" id="cto">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    Outsourcing service for building your company infrastructure
+                    in cloud or in house, monitoring your resources and
+                    developments.
+                  </p>
+                  <div class="profile mt-auto">
+                    <img
+                            src="app/img/testimonials/cto.jpg"
+                            class="testimonial-img"
+                            alt=""
+                    />
+                    <h3>CTO</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>Build of microservices for your website or SaaS system.</p>
+                  <div class="profile mt-auto">
+                    <img
+                            src="app/img/testimonials/api.jpg"
+                            class="testimonial-img"
+                            alt=""
+                    />
+                    <h3>API & Frameworks</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    Responsive websites. End to End automation tests for your
+                    already in place website.
+                  </p>
+                  <div class="profile mt-auto">
+                    <img
+                            src="app/img/testimonials/ecom.jfif"
+                            class="testimonial-img"
+                            alt=""
+                    />
+                    <h3>Websites / E-Commerce</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    Intelligent systems, feedback analysis, classification's
+                    problems, etc.
+                  </p>
+                  <div class="profile mt-auto">
+                    <img
+                            src="app/img/testimonials/ml.jfif"
+                            class="testimonial-img"
+                            alt=""
+                    />
+                    <h3>IA & Machine Learning</h3>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div
-              class="col-lg-6 d-flex align-items-center aboutImage"
-              data-aos="zoom-out"
-              data-aos-delay="200"
-            >
-              <img src="app/img/as7.jpg" class="img-fluid" alt="" />
-            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
-      <!-- End About Section -->
+      <!-- End service Section -->
 
-      <!-- ======= Counts Section ======= -->
-      <section id="counts" class="counts">
-        <h2 class="countSectionHeading">What i have achieved so far</h2>
-        <div class="container countDisplay" data-aos="fade-up">
-          <div class="row gy-4">
-            <div class="col-lg-3 col-md-6">
-              <div class="count-box">
-                <i class="bi bi-emoji-smile"></i>
-                <div>
-                  <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="15"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span>
-                  <p>Happy Clients</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-              <div class="count-box">
-                <i class="bi bi-journal-richtext" style="color: #ee6c20"></i>
-                <div>
-                  <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="20"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span>
-                  <p>Projects</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-              <div class="count-box">
-                <i class="bi bi-headset" style="color: #15be56"></i>
-                <div>
-                  <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="1200"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span>
-                  <p>Hours Of Work</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-              <div class="count-box">
-                <i class="bi bi-people" style="color: #bb0852"></i>
-                <div>
-                  <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="15"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span>
-                  <p>Year Experience</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Counts Section -->
 
       <!-- ======= Technologies Section ======= -->
       <section id="Tech" class="services">
@@ -513,12 +524,133 @@
       </section>
       <!-- End Technologies Section -->
 
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="row gx-0">
+            <div
+                    class="col-lg-6 d-flex flex-column justify-content-center"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+            >
+              <div class="content">
+                <h2 class="secondHeadingOfabout">
+                  Let me introduce myself.
+                </h2>
+                <p class="fontOfaboutPara">
+                  I am a passionate guy who loves coding and providing efficient
+                  solutions. For years my career has been in Java and I have the
+                  certification of Associate, Professional and Expert from
+                  Oracle. For different years I have also designed and
+                  maintained databases such as Oracle and later MongoDB. In the
+                  last few years my focus has been helping startups to build
+                  their MPV using Angular, React, Python and MongoDB. I am
+                  passionate about Artificial Intelligence and that's why I
+                  decided to attend in 2021 a Postgraduate program at University of
+                  Leuven. I don't think my career will switch
+                  to AI but it really helped me to bring into Software
+                  engineering the Machine Learning technique and apply them in
+                  real world use cases.
+                </p>
+                <div class="text-center text-lg-start">
+                  <a
+                          href="#"
+                          class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center"
+                  >
+                    <span>Read More</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+                    class="col-lg-6 d-flex align-items-center aboutImage"
+                    data-aos="zoom-out"
+                    data-aos-delay="200"
+            >
+              <img src="app/img/as7.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+
+      <!-- ======= Counts Section ======= -->
+      <section id="counts" class="counts">
+        <h2 class="countSectionHeading">What i have achieved so far</h2>
+        <div class="container countDisplay" data-aos="fade-up">
+          <div class="row gy-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-emoji-smile"></i>
+                <div>
+                  <span
+                          data-purecounter-start="0"
+                          data-purecounter-end="15"
+                          data-purecounter-duration="1"
+                          class="purecounter"
+                  ></span>
+                  <p>Happy Clients</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-journal-richtext" style="color: #ee6c20"></i>
+                <div>
+                  <span
+                          data-purecounter-start="0"
+                          data-purecounter-end="20"
+                          data-purecounter-duration="1"
+                          class="purecounter"
+                  ></span>
+                  <p>Projects</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-headset" style="color: #15be56"></i>
+                <div>
+                  <span
+                          data-purecounter-start="0"
+                          data-purecounter-end="1200"
+                          data-purecounter-duration="1"
+                          class="purecounter"
+                  ></span>
+                  <p>Hours Of Work</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-people" style="color: #bb0852"></i>
+                <div>
+                  <span
+                          data-purecounter-start="0"
+                          data-purecounter-end="15"
+                          data-purecounter-duration="1"
+                          class="purecounter"
+                  ></span>
+                  <p>Year Experience</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Counts Section -->
+
       <!-- ======= F.A.Q Section ======= -->
       <section id="faq" class="faq">
         <div class="container" data-aos="fade-up">
           <header class="section-header">
-            <h2>F.A.Q</h2>
-            <p class="zcoolfont">Frequently Asked Questions</p>
+            <p class="zcoolfont">How to start a collaboration?</p>
           </header>
 
           <div class="row">
@@ -684,139 +816,6 @@
       </section>
       <!-- End F.A.Q Section -->
 
-      <!-- ======= service Section ======= -->
-      <section id="serv" class="testimonials">
-        <div class="container" data-aos="fade-up">
-          <header class="section-header">
-            <p class="ServicePara">Services</p>
-          </header>
-
-          <div
-            class="testimonials-slider swiper"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>Fast and economic solutions for your business idea.</p>
-                  <div class="profile mt-auto">
-                    <img
-                      src="app/img/testimonials/mvp.jfif"
-                      class="testimonial-img"
-                      alt=""
-                    />
-                    <h3>MVP creation</h3>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide" id="cto">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    Outsourcing service for building your company infrastructure
-                    in cloud or in house, monitoring your resources and
-                    developments.
-                  </p>
-                  <div class="profile mt-auto">
-                    <img
-                      src="app/img/testimonials/cto.jpg"
-                      class="testimonial-img"
-                      alt=""
-                    />
-                    <h3>CTO</h3>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>Build of microservices for your website or SaaS system.</p>
-                  <div class="profile mt-auto">
-                    <img
-                      src="app/img/testimonials/api.jpg"
-                      class="testimonial-img"
-                      alt=""
-                    />
-                    <h3>API & Frameworks</h3>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    Responsive websites. End to End automation tests for your
-                    already in place website.
-                  </p>
-                  <div class="profile mt-auto">
-                    <img
-                      src="app/img/testimonials/ecom.jfif"
-                      class="testimonial-img"
-                      alt=""
-                    />
-                    <h3>Websites / E-Commerce</h3>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    Intelligent systems, feedback analysis, classification's
-                    problems, etc.
-                  </p>
-                  <div class="profile mt-auto">
-                    <img
-                      src="app/img/testimonials/ml.jfif"
-                      class="testimonial-img"
-                      alt=""
-                    />
-                    <h3>IA & Machine Learning</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-      <!-- End service Section -->
 
       <!-- ======= Contact Section ======= -->
       <section id="contact" class="contact">
