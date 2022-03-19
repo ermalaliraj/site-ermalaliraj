@@ -99,7 +99,7 @@ section {
   font-size: 33px;
   line-height: 42px;
   font-weight: 700;
-  color: #012970;
+  /* color: #012970; */
 }
 @media (max-width: 768px) {
   .section-header p {
@@ -259,11 +259,45 @@ section {
   line-height: 0;
   margin-left: 5px;
 }
+
+/* hdhhd */
+
+.nav-menu > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -17px;
+  left: 26px;
+  background-color: #322d64;
+  visibility: hidden;
+  /* visibility: visible; */
+  width: 0px;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.nav-menu a:hover:before,
+.nav-menu li:hover > a:before,
+.nav-menu .active > a:before {
+  visibility: visible;
+  width: 80%;
+}
+
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover > a {
+  color: #fff;
+}
+
+/* hdhhd */
+
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
   color: #4154f1;
+
+  /* width: fit-content; */
 }
 .navbar .getstarted,
 .navbar .getstarted:focus {
@@ -292,6 +326,7 @@ section {
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
+  /* border-bottom: 1px solid red; */
 }
 .navbar .dropdown ul li {
   min-width: 200px;
@@ -520,9 +555,10 @@ section {
 #home {
   width: 100%;
   height: 100vh;
-  background: url("../img/abouutimg.jpg") top center;
+  background: url("../img/homedemo15.jpg") top center;
   background-size: cover;
   position: relative;
+  object-position: 0px 0px;
 }
 #home:before {
   content: "";
@@ -950,7 +986,7 @@ section {
 .contact .info-box {
   color: #444444;
   background: #fafbff;
-  padding: 30px;
+  padding: 5px;
 }
 .contact .info-box i {
   font-size: 38px;
@@ -1059,7 +1095,7 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-.footer {
+/* .footer {
   background: #f6f9ff;
   padding: 0 0 30px 0;
   font-size: 14px;
@@ -1208,7 +1244,7 @@ section {
   text-align: center;
   font-size: 13px;
   color: #012970;
-}
+} */
 
 .logoNameDistance {
   margin-left: -22px;
@@ -1544,9 +1580,23 @@ section {
   font-family: "Open Sans", sans-serif;
 }
 .techTechKNowmargin {
-  margin-bottom: -35px;
-  margin-top: -40px;
+  margin-bottom: 28px;
+  margin-top: -29px;
+  color: #009961;
 }
+.serviceheadingColor {
+  color: #012970;
+}
+.aboutheadingcolor {
+  color: #012970;
+}
+.colloheadingcolor {
+  color: #012970;
+}
+.contactheadingColor {
+  color: #012970;
+}
+
 .fontOfColloboration {
   font-size: 32px;
 }
@@ -1594,8 +1644,13 @@ section {
   justify-content: center;
   align-items: center;
 }
-.ball2image img {
-  width: 51px;
+.step2 img {
+  width: 60px;
+  height: 38px;
+  object-fit: cover;
+}
+.step4 img {
+  width: 60px;
   height: 38px;
   object-fit: cover;
 }
@@ -1625,4 +1680,199 @@ section {
   height: 30px;
   width: 30px;
   /* background-color: green; */
+}
+
+.colloelement {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1rem;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.steps {
+  box-shadow: 0px 0px 2px -1px black;
+  border-radius: 20px;
+  padding: 5px;
+  padding-top: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.steps:hover {
+  /* box-shadow: 0px 6px 2px -1px #009961; */
+  border-radius: 20px;
+
+  transform: translateY(-10px);
+  transition: all ease-in-out 0.3s;
+}
+.steps p {
+  font-family: serif;
+}
+.step1st {
+  font-size: 24px;
+  font-weight: 700;
+  color: #cfb835;
+}
+.step2st {
+  font-size: 24px;
+  font-weight: 700;
+  color: #090b8a;
+}
+.step3st {
+  font-size: 24px;
+  font-weight: 700;
+  color: #c7102c;
+}
+.step4st {
+  font-size: 24px;
+  font-weight: 700;
+  color: #8d438df5;
+}
+.step1 img {
+  margin-top: -5px;
+  margin-left: -6px;
+}
+.step2 img {
+  margin-top: -2px;
+  margin-left: -8px;
+}
+.step3 img {
+  margin-top: -5px;
+  margin-left: 0px;
+}
+.step4 img {
+  margin-top: -3px;
+  margin-left: 0px;
+}
+.stapp1:hover {
+  box-shadow: 0px 6px 2px -1px #cfb835;
+}
+.stapp2:hover {
+  box-shadow: 0px 6px 2px -1px #090b8a;
+}
+.stapp3:hover {
+  box-shadow: 0px 6px 2px -1px #c7102c;
+}
+.stapp4:hover {
+  box-shadow: 0px 6px 2px -1px #8d438df5;
+}
+.adressmapdisplay {
+  display: flex;
+  margin-bottom: 32px;
+}
+.col-lg-6 {
+  flex: 0 0 auto;
+  width: 47%;
+}
+.widthcall {
+  width: 240px;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+  background: #322d64;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #009961;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #00b371;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+
+#footer .credits {
+  font-size: 13px;
+}
+
+#footer .credits a {
+  color: #00b371;
+  transition: 0.3s;
+}
+
+#footer .credits a:hover {
+  color: #009961;
+}
+
+.button {
+  font-size: 2rem;
+  background: #f3f0f1;
+  position: relative;
+  background: #f3f0f1;
+  margin-bottom: 25px;
+  border-radius: 11px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+    6px 6px 10px rgba(0, 0, 0, 0.2);
+  color: #009961;
+}
+span.button {
+  line-height: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: semibold;
+}
+.button:hover {
+  opacity: 0.3;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+    6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+.button:active {
+  opacity: 1;
+  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+    inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+  color: #79e3b6;
+}
+@media screen and (max-width: 540px) {
+  .button {
+    font-size: 1rem;
+  }
 }

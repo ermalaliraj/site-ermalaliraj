@@ -377,6 +377,8 @@
   document.getElementById("icon-boxex1t").onmouseout = function () {
     document.getElementById("headingser1t").style.color = "#2c4964";
     document.getElementById("headingser1t").style.fontWeight = "600";
+    document.getElementById("icon-boxex1t").style.transition =
+      "all ease-in-out 0.3s";
   };
 
   document.getElementById("icon-boxex2t").onmouseover = function () {
@@ -386,6 +388,8 @@
   document.getElementById("icon-boxex2t").onmouseout = function () {
     document.getElementById("headingser2t").style.color = "#2c4964";
     document.getElementById("headingser2t").style.fontWeight = "600";
+    document.getElementById("icon-boxex2t").style.transition =
+      "all ease-in-out 0.3s";
   };
 
   document.getElementById("icon-boxex3t").onmouseover = function () {
@@ -395,6 +399,8 @@
   document.getElementById("icon-boxex3t").onmouseout = function () {
     document.getElementById("headingser3t").style.color = "#2c4964";
     document.getElementById("headingser3t").style.fontWeight = "600";
+    document.getElementById("icon-boxex3t").style.transition =
+      "all ease-in-out 0.3s";
   };
 
   document.getElementById("icon-boxex4t").onmouseover = function () {
@@ -404,6 +410,8 @@
   document.getElementById("icon-boxex4t").onmouseout = function () {
     document.getElementById("headingser4t").style.color = "#2c4964";
     document.getElementById("headingser4t").style.fontWeight = "600";
+    document.getElementById("icon-boxex4t").style.transition =
+      "all ease-in-out 0.3s";
   };
 
   document.getElementById("icon-boxex5t").onmouseover = function () {
@@ -413,6 +421,8 @@
   document.getElementById("icon-boxex5t").onmouseout = function () {
     document.getElementById("headingser5t").style.color = "#2c4964";
     document.getElementById("headingser5t").style.fontWeight = "600";
+    document.getElementById("icon-boxex5t").style.transition =
+      "all ease-in-out 0.3s";
   };
 
   document.getElementById("icon-boxex6t").onmouseover = function () {
@@ -422,5 +432,19 @@
   document.getElementById("icon-boxex6t").onmouseout = function () {
     document.getElementById("headingser6t").style.color = "#2c4964";
     document.getElementById("headingser6t").style.fontWeight = "600";
+    document.getElementById("icon-boxex6t").style.transition =
+      "all ease-in-out 0.3s";
+  };
+  document.querySelector(".stapp1").onmouseover = function () {
+    document.querySelector(".stapp1").style.transition = "all ease-in-out 0.3s";
+  };
+  document.querySelector(".stapp2").onmouseover = function () {
+    document.querySelector(".stapp2").style.transition = "all ease-in-out 0.3s";
+  };
+  document.querySelector(".stapp3").onmouseover = function () {
+    document.querySelector(".stapp3").style.transition = "all ease-in-out 0.3s";
+  };
+  document.querySelector(".stapp4").onmouseover = function () {
+    document.querySelector(".stapp4").style.transition = "all ease-in-out 0.3s";
   };
 })();
