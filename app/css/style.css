@@ -224,7 +224,7 @@ section {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -371,7 +371,7 @@ section {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #012970;
@@ -987,6 +987,7 @@ section {
   color: #444444;
   background: #fafbff;
   padding: 5px;
+  margin-top: 32px;
 }
 .contact .info-box i {
   font-size: 38px;
@@ -1759,14 +1760,17 @@ section {
 }
 .adressmapdisplay {
   display: flex;
+  flex-direction: column;
   margin-bottom: 32px;
+  padding-left: 17px;
 }
 .col-lg-6 {
   flex: 0 0 auto;
   width: 47%;
 }
 .widthcall {
-  width: 240px;
+  /* width: 240px; */
+  padding-left: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -1851,7 +1855,7 @@ section {
   cursor: pointer;
   transition: all 0.1s ease-in-out;
   box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
-    6px 6px 10px rgba(0, 0, 0, 0.2);
+  6px 6px 10px rgba(0, 0, 0, 0.2);
   color: #009961;
 }
 span.button {
@@ -1863,16 +1867,26 @@ span.button {
 .button:hover {
   opacity: 0.3;
   box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
-    6px 6px 10px rgba(0, 0, 0, 0.2);
+  6px 6px 10px rgba(0, 0, 0, 0.2);
 }
 .button:active {
   opacity: 1;
   box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
-    inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+  inset 8px 8px 16px rgba(0, 0, 0, 0.1);
   color: #79e3b6;
 }
 @media screen and (max-width: 540px) {
   .button {
     font-size: 1rem;
   }
+}
+
+.mapmargintop1 {
+  margin-top: 15px;
+}
+.mapmargintop2 {
+  margin-top: 30px;
+}
+.mapmargintop3 {
+  margin-top: 30px;
 }
