@@ -1898,7 +1898,7 @@ section {
 }
 .col-lg-6 {
   flex: 0 0 auto;
-  width: 47%;
+  width: 50%;
 }
 .widthcall {
   /* width: 240px; */
