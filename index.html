@@ -208,6 +208,16 @@
     </section>
     <!-- End Services Section -->
 
+
+
+
+
+
+
+
+
+
+
     <!-- ======= Technologies Section ======= -->
     <section class="techknow services" id="Tech">
         <div class="container" data-aos="fade-up">
@@ -216,7 +226,7 @@
                     <p class="techPara techTechKNowmargin">Technologies</p>
                 </header>
             </div>
-            <div class="techknowcontainer" data-aos="fade-up">
+            <div class="techknowcontainer row-gy-4" data-aos="fade-up">
                 <div class="techknowboxex " id="icon-boxex1t">
                     <div class="displaybackend">
                         <h3 id="headingser1t" class=" backendicon"><img src="app/img/laptop.png"/>Backend</h3>
@@ -315,7 +325,7 @@
                 <img src="app/img/angular.png" height="100" width="250" alt=""/>
             </div>
             <div class="slide">
-                <img src="app/img/re.png" height="100" width="250" alt=""/>
+               <img src="app/img/re.png" height="100" width="250" alt=""/>
             </div>
             <div class="slide jsimg">
                 <img src="app/img/js1.png" height="80" width="250" alt=""/>
@@ -400,11 +410,13 @@
                             <i class="bi bi-emoji-smile"></i>
                             <div>
                                 <span data-purecounter-start="0"
-                                      data-purecounter-end="15"
+                                   
                                       data-purecounter-duration="1"
                                       class="purecounter">
                                 </span>
+                                 <div class="numberINcount">15</div>
                                 <p>Happy Clients</p>
+                               
                             </div>
                         </div>
                     </div>
@@ -419,6 +431,7 @@
                                         data-purecounter-duration="1"
                                         class="purecounter">
                                 </span>
+                                <div class="numberINcount">20</div>
                                 <p>Projects</p>
                             </div>
                         </div>
@@ -433,6 +446,7 @@
                                       data-purecounter-duration="1"
                                       class="purecounter">
                                 </span>
+                                <div class="numberINcount">1200</div>
                                 <p>Hours Of Work</p>
                             </div>
                         </div>
@@ -447,6 +461,7 @@
                                       data-purecounter-duration="1"
                                       class="purecounter">
                                 </span>
+                                <div class="numberINcount">15</div>
                                 <p>Year Experience</p>
                             </div>
                         </div>
@@ -504,6 +519,12 @@
     </section>
     <!-- End How to collaborate Section -->
 
+
+
+
+
+
+
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
         <div class="container" data-aos="fade-up">
@@ -511,7 +532,7 @@
                 <p class="zcoolfont contactheadingColor">Contact</p>
             </header>
 
-            <div class="row gy-12">
+            <!-- <div class="row gy-12">
                 <div class="col-lg-4  gy-4 widthcall">
                     <div class="col-md-10 ">
                         <div class="info-box">
@@ -559,38 +580,168 @@
                         </div>
                     </form>
                 </div>
-            </div>
+            </div> -->
+
+
+            <div class="container">
+                <div class="section-title">
+                  <!-- <h2>Contact</h2> -->
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="row">
+                          <div class="col-md-12">
+                        <div class="info-box">
+                          <i class="bi bi-telephone"></i>
+                          <h3>Call Me</h3>
+                          <p>+39 339 615 1479</p>
+                        </div>
+                      </div>
+                      <!-- <div class="col-md-12">
+                        <div class="info-box">
+                          <i class="bx bx-map"></i>
+                          <h3>Our Address</h3>
+                          <p>
+                            #1508, Block-5, My Home Avatar, </br>Gachibowli Extension,
+                            Narsing,</br> Hyderabad – 500 089
+                          </p>
+                        </div>
+                      </div> -->
+                      <div class="col-md-12">
+                        <div class="info-box">
+                          <i class="bi bi-envelope"></i>
+                          <h3>Email Me</h3>
+                          <p>ermal.aliraj@gmail.com</p>
+                        </div>
+                      </div>
+                    
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-6">
+                    <form
+                    
+                      method="post"
+                     
+                      class="php-email-form"
+                      id="frmSubmit"
+                    >
+                      <div class="row">
+                        <div class="col-md-6 form-group">
+                          <input
+                            type="text"
+                            name="name"
+                            class="form-control"
+                            id="name"
+                            placeholder="Your Name"
+                            required
+                          />
+                        </div>
+                        <div class="col-md-6 form-group mt-3 mt-md-0">
+                          <input
+                            type="email"
+                            class="form-control"
+                            name="email"
+                            id="email"
+                            placeholder="Your Email"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group mt-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="subject"
+                          id="subject"
+                          placeholder="Subject"
+                          required
+                        />
+                      </div>
+
+                      <div class="col-md-12">
+                        <label for="myfile">Select a file:</label>
+                        <input type="file" id="myfile" name="myfile" />
+                    </div>
+
+
+                      <div class="form-group mt-3">
+                        <textarea
+                          class="form-control"
+                          name="message"
+                          rows="5"
+                          placeholder="Message"
+                          required
+                        ></textarea>
+                      </div>
+                      <div class="my-3">
+                        <div class="loading">Loading</div>
+                     
+                        <div class="sent-message">
+                          Your message has been sent. Thank you!
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <button type="submit" id="btnSubmit">Send Message</button>
+                      </div>
+                    </form>
+                    <!-- <script >
+                      jQuery("#frmSubmit").on("submit", function (e) {
+                        e.preventDefault();
+                    
+                        jQuery("#btnSubmit").attr("disabled", true);
+                        jQuery.ajax({
+                          url: "https://script.google.com/macros/s/AKfycbx59PcJNTBc5zRVM9e7DzVPuIIS3I10m4RTcV_Qsm6ZNtORa8GUxELtniTNikEoMMe5rw/exec",
+                          type: "post",
+                          data: jQuery("#frmSubmit").serialize(),
+                          success: function (result) {
+                            jQuery("#frmSubmit")[0].reset();
+                           
+                            jQuery("#btnSubmit").attr("disabled", false);
+                          
+                          },
+                        });
+                      });
+                    </script> -->
+                  </div>
+                </div>
+              </div>
+
+
+
+
 
             <div class="row gy-12">
-                <!-- <div class="displayOfmaps"> -->
+              
                 <div class="col-lg-4  gy-4">
-                    <!-- <div class="row gy-4"> -->
-                    <div class="adressess">
+           
+
                         <div class="col-lg-12 adressmapdisplay">
-                            <div class="col-lg-6 info-box">
+                            <div class="col-lg-12 info-box">
                                 <i class="bi bi-geo-alt"></i>
                                 <h3>Belgium</h3>
-                                <p>Avenue Des Courses 16A,<br/>Ixelles, Brussel<br/>Belgium</p>
+                                <p>Avenue Des Courses 16A,<br/>Ixelles, Brussel, Belgium</p>
                             </div>
-                            <div class="col-lg-6 mapmargintop1">
+                            <div class="col-lg-12 mapmargintop1">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.8579778356207!2d4.376401315435608!3d50.81526997952727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd01dff5e6445fec6!2zNTDCsDQ4JzU1LjAiTiA0wrAyMic0Mi45IkU!5e0!3m2!1sen!2sin!4v1647695351777!5m2!1sen!2sin"
-                                        width="200" height="200" style="border:0;" allowfullscreen=""
+                                width="398.99"   height="200" style="border:0;" allowfullscreen=""
                                         loading="lazy"></iframe>
                             </div>
                         </div>
-                    </div>
+           
                 </div>
 
                 <div class="col-lg-4  gy-4">
                     <div class="col-lg-12 adressmapdisplay">
-                        <div class="col-lg-6 info-box">
+                        <div class="col-lg-12 info-box">
                             <i class="bi bi-geo-alt"></i>
                             <h3>Italy</h3>
                             <p>Via Paoletti 7,<br/>Florence, Italy<br/></p>
+                        <!-- </br> -->
                         </div>
-                        <div class="col-lg-6 mapmargintop2">
+                        <div class="col-lg-12  mapmargintop1 ">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.2396513785607!2d11.25031131514909!3d43.78863997911693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe2d58da5d039d8a5!2zNDPCsDQ3JzE5LjEiTiAxMcKwMTUnMDkuMCJF!5e0!3m2!1sen!2sin!4v1647695476584!5m2!1sen!2sin"
-                                    width="200" height="200" style="border:0;" allowfullscreen=""
+                                    width="398.99" height="200" style="border:0;" allowfullscreen=""
                                     loading="lazy"></iframe>
                         </div>
                     </div>
@@ -598,14 +749,16 @@
 
                 <div class="col-lg-4  gy-4">
                     <div class="col-lg-12 adressmapdisplay">
-                        <div class="col-lg-6 info-box">
+                        <div class="col-lg-12 info-box">
                             <i class="bi bi-geo-alt"></i>
                             <h3>Albania</h3>
                             <p>Rruga Deshmoret,<br/>Tirane, Albania<br/></p>
+                            
+<!-- </br> -->
                         </div>
-                        <div class="col-lg-6 mapmargintop3">
+                        <div class="col-lg-12 mapmargintop1">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.2484745170846!2d19.79041131505658!3d41.32520997926997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf4cfb240a96ee34!2zNDHCsDE5JzMwLjgiTiAxOcKwNDcnMzMuNCJF!5e0!3m2!1sen!2sin!4v1647695545613!5m2!1sen!2sin"
-                                    width="200" height="200" style="border:0;" allowfullscreen=""
+                                    width="398.99" height="200" style="border:0;" allowfullscreen=""
                                     loading="lazy"></iframe>
                         </div>
                     </div>
@@ -614,6 +767,10 @@
         </div>
     </section>
     <!-- End Contact Section -->
+
+
+
+
 </main>
 
 <footer id="footer" style="min-height:30vh;">
