@@ -353,6 +353,17 @@
     document.querySelector(".headingser5").style.fontWeight = "600";
   };
 
+  document.querySelector(".icon-boxex6").onmouseover = function () {
+    // document.querySelector(".headingser").style.bacolor = "red";
+    document.querySelector(".headingser6").style.color = "#484895";
+    document.querySelector(".headingser6").style.fontWeight = "900";
+  };
+  document.querySelector(".icon-boxex6").onmouseout = function () {
+    // document.querySelector(".headingser").style.bacolor = "#2c4964";
+    // document.querySelector(".headingser").style.backgroundColor = "red";
+    document.querySelector(".headingser6").style.color = "#2c4964";
+    document.querySelector(".headingser6").style.fontWeight = "600";
+  };
   // change tech div colour
 
   /**
