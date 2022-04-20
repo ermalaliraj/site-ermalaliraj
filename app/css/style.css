@@ -1826,17 +1826,25 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  grid-gap: 1rem;
-  /* padding-left: 100px;
-  padding-right: 100px; */
+  grid-gap: 0.2rem;
+  padding-left: 100px;
+  padding-right: 100px;
+  /* border: 1px solid red; */
+  /* width: 48vw;
+  height: 100%;
+  padding-right: 1px; */
 }
 .colloelementsss {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 1rem;
-  /* padding-left: 100px;
-  padding-right: 100px; */
+  grid-gap: 0.2rem;
+  padding-left: 100px;
+  padding-right: 100px;
+  /* border: 1px solid blue; */
+  /* width: 48vw;
+  height: 100%;
+  padding-left: 1px; */
 }
 .steps {
   /* box-shadow: 0px 0px 2px -1px black; */
@@ -2391,7 +2399,7 @@ font-size: 21px;
 .subjectmargin{
   margin-top: 49px;
 }
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 1380px) { 
   .colloelementss {
    
     grid-template-columns: repeat(2, 1fr);
@@ -2411,7 +2419,7 @@ font-size: 21px;
 
 
 
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 1380px) { 
   .colloelementsss {
    
     grid-template-columns: repeat(2, 1fr);
@@ -2438,3 +2446,28 @@ font-size: 21px;
   background-color: #0b198f;
   color: rgb(167, 99, 99);
 }
+.makoneabout{
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.collosec{
+  box-shadow: 0px 0px 2px -1px rgb(236, 34, 34);
+}
+
+.y{
+  /* margin-top: -356px; */
+  padding: 10px;
+  /* box-shadow: 0px 0px 2px -1px rgb(11, 0, 0); */
+}
+
+.x{
+  /* margin-top: -356px; */
+  padding: 10px;
+  /* box-shadow: 0px 0px 2px -1px rgb(8, 0, 0); */
+}
+
+
+
