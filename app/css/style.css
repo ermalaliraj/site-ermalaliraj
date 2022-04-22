@@ -2699,3 +2699,11 @@ font-size: 21px;
   }
 
 }
+
+@media screen and (max-width: 345px) { 
+.nav-menu > ul > li > a:before {
+ 
+  background-color: none;
+ 
+}
+}
