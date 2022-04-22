@@ -2658,8 +2658,11 @@ font-size: 21px;
    
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
+    /* padding-left: 100px;
+    padding-right: 100px; */
    
   }
+ 
   .secondviewscreens{
     display: none;
   }
@@ -2670,4 +2673,29 @@ font-size: 21px;
   {
     display: block;
   }
+  
+}
+@media screen and (max-width: 400px) { 
+
+  .cooll1 img{
+    width: 150px;
+    /* height: 150px; */
+  }
+
+}
+@media screen and (max-width: 380px) { 
+
+  .cooll1 img{
+    width: 120px;
+    /* height: 150px; */
+  }
+
+}
+@media screen and (max-width: 345px) { 
+
+  .cooll1 img{
+    width: 100px;
+    /* height: 150px; */
+  }
+
 }
