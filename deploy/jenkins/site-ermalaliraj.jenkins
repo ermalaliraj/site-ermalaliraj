@@ -1,0 +1,17 @@
+Discard old builds
+    Strategy: Log Rotation
+        Max # of builds to keep: 3
+
+Source Code Management
+    Git
+        Repository URL: git@github.com:ermalaliraj/site-ermalaliraj.git
+        Credentials: jenkins
+    Branches to build: */production
+
+Poll SCM
+    Schedule: * * * * *
+
+
+Build Steps:
+1. Execute shell
+    sh deploy/jenkins/prd/deploy.sh
