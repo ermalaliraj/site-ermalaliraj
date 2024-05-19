@@ -3,7 +3,6 @@ SRC_DIR=./
 STAGE_DIR=/tmp
 DEPLOY_DIR=/www/wwwroot/site-ermalaliraj
 ZIP_NAME=site-ermalaliraj.tar.gz
-SCRIPT_INSTALL=install-test.sh
 
 # Stage files
 echo "Creating zip $ZIP_NAME with content of folder '$SRC_DIR'"
@@ -26,8 +25,6 @@ if [ -f "/tmp/site-ermalaliraj.tar.gz" ]; then
     sudo tar xvzf site-ermalaliraj.tar.gz --strip-components 1
     echo "Exploded successfully zip site-ermalaliraj.tar.gz in /www/wwwroot/site-ermalaliraj/"
     sudo rm -f site-ermalaliraj.tar.gz
-    chmod o+x install-prd.sh
-    sh install-prd.sh
     echo "✅ site-ermalaliraj deployed successfully."
 else
     echo "File /tmp/site-ermalaliraj.tar.gz does not exist. Deploy didn't succeed. Old application version is still running!"
